@@ -1,14 +1,14 @@
 # dependencies
-/flask
-/node_modules
-/.pnp
-.pnp.js
+flask/
+node_modules/
+pnp/
+*.pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
-/build
+build/
 
 # misc
 *.swp
