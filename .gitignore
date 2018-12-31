@@ -13,6 +13,9 @@ build/
 # misc
 *.swp
 *.pyc
+*.swl
+*.swn
+*.swo
 
 .DS_Store
 .env.local
