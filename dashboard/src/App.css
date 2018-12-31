@@ -8,7 +8,12 @@ html, body, #root, .App {
 }
 
 .App .content {
-    padding: 1em, 1em, 0, 1em;
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .App .content p {
