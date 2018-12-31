@@ -13,7 +13,11 @@ class Sidebar extends React.Component {
     return (
       <div className="Sidebar">
           <div className="header">
-            Placeholder
+            <span className="profile-icon"></span>
+            <div className="user-info">
+              <span className="user-name">Shawn Giroux</span>
+              <span className="app-name">Subscription Calculator</span>
+            </div>
           </div>
           <ul>
             <li className={this.getNavLinkClass("/")}>
