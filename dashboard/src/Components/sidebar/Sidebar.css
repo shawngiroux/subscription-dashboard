@@ -1,4 +1,6 @@
-.Sidebar {
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ 
+ .Sidebar {
     width: 300px;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,21 +31,28 @@
 
 
 .Sidebar ul li  {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 2em;
+    /*padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;*/
     list-style-type: none;
 }
 
 .Sidebar ul li a, svg{
-    margin-left: 0.5em;
     text-decoration: none;
     color: #9898A2;
 }
 
 .Sidebar ul li svg {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 .Sidebar ul li a {
-    font-size: 1.2em;
+    display: block;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-right: 1.5em;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 }
