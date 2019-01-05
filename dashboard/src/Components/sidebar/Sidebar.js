@@ -27,13 +27,13 @@ class Sidebar extends React.Component {
           <ul>
             <li className={this.getNavLinkClass("/")}>
               <NavLink to="/">
-                <FontAwesomeIcon icon="tachometer-alt" size="md" />
+                <FontAwesomeIcon icon="tachometer-alt" />
                 Dashboard
               </NavLink>
             </li>
             <li className={this.getNavLinkClass("/About")}>
               <NavLink to="About">
-                <FontAwesomeIcon icon="tools" size="md" />
+                <FontAwesomeIcon icon="tools" />
                 Settings
               </NavLink>
             </li>
