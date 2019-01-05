@@ -13,10 +13,15 @@ class Sidebar extends React.Component {
     return (
       <div className="Sidebar">
           <div className="header">
-            <span className="profile-icon"></span>
-            <div className="user-info">
-              <span className="user-name">Shawn Giroux</span>
-              <span className="app-name">Subscription Calculator</span>
+            <div className="logo">
+              <span className="logo-name">Dashboard</span>
+            </div>
+            <div className="user">
+              <span className="profile-icon"></span>
+              <div className="user-info">
+                <span className="user-name">Shawn Giroux</span>
+                <span className="app-name">Subscription Calculator</span>
+              </div>
             </div>
           </div>
           <ul>

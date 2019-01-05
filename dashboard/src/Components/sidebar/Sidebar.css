@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
- 
+ @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
  .Sidebar {
     width: 100%;
     max-width: 300px;
@@ -9,11 +10,27 @@
 }
 
 .Sidebar .header {
-    height: 100px;
+    height: 200px;
+    flex-direction: column;
+}
+
+.Sidebar .header .logo {
+    color: white;
+    font-size: 3em;
+    font-family: 'Pacifico', cursive;
+    justify-content: center;
+    align-items: center;
+    background-color: #A48AD4;
+}
+
+.Sidebar .header {
+}
+
+.Sidebar .header .user {
+    height: 150px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #A48AD4;
 }
 
 .Sidebar .header .profile-icon {
@@ -52,7 +69,6 @@
     border-left: 3px solid #A48AD4;
     background-color: #232530;
 }
-
 
 .Sidebar ul li  {
     list-style-type: none;
