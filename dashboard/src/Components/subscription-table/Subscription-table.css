@@ -1,5 +1,15 @@
+/*.subscription-table {
+    max-height: 500px;
+    width: 100%;
+}*/
+
 .subscription-table {
     max-height: 500px;
     width: 100%;
     background-color: white;
+}
+
+.subscription-table * {
+    max-height: 500px;
+    width: 100%;
 }
