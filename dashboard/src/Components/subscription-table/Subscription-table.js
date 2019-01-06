@@ -21,15 +21,21 @@ export class SubscriptionTable extends Component {
 				{make: "Porsche", model: "Boxter", price: 72000}
 			]
 		}
-
   }
+  
+  onFirstDataRendered(params) {
+    params.api.sizeColumnsToFit();
+  }
+
   render() {
     return (
       <div className="subscription-table">
         <div className="ag-theme-balham">
           <AgGridReact
             columnDefs={this.state.columnDefs}
-            rowData={this.state.rowData}>
+            rowData={this.state.rowData}
+            onFirstDataRendered={this.onFirstDataRendered.bind(this)}
+          >
           </AgGridReact>
         </div>
       </div>
