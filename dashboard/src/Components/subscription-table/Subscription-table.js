@@ -41,17 +41,24 @@ export class SubscriptionTable extends Component {
 
   render() {
     return (
-      <div className="subscription-table">
-        <div className="ag-theme-balham">
-          <AgGridReact
-            enableSorting={true}
-            pagination={true}
-            columnDefs={this.state.columnDefs}
-            rowData={this.state.rowData}
-            onGridReady={this.state.onGridReady}
-            onFirstDataRendered={this.onFirstDataRendered.bind(this)}
-          >
-          </AgGridReact>
+      <div className="widget">
+        <div className="widget-header">
+          <span>Your Subscriptions</span>
+        </div>
+        <div className="widget-body">
+          <div className="subscription-table">
+            <div className="ag-theme-balham">
+              <AgGridReact
+                enableSorting={true}
+                pagination={true}
+                columnDefs={this.state.columnDefs}
+                rowData={this.state.rowData}
+                onGridReady={this.state.onGridReady}
+                onFirstDataRendered={this.onFirstDataRendered.bind(this)}
+              >
+              </AgGridReact>
+            </div>
+          </div>
         </div>
       </div>
     );
