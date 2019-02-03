@@ -17,8 +17,8 @@ export class SubscriptionTable extends Component {
 
 			],
 			rowData: [
-                {subscription: "Hulu",     cost: "$7.99",  renewelDate: "2019-01-27"},
-                {subscription: "Netflix",  cost: "$9.99",  renewelDate: "2019-01-21"}
+        {subscription: "Hulu",     cost: "$7.99",  renewelDate: "2019-01-27"},
+        {subscription: "Netflix",  cost: "$9.99",  renewelDate: "2019-01-21"}
 			]
 		}
   }
