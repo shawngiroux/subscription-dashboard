@@ -47,3 +47,8 @@
     background-color: #A48AD4;
     color: white;
 }
+
+.ag-paging-panel {
+    padding: 0px;
+    border: none;
+}
