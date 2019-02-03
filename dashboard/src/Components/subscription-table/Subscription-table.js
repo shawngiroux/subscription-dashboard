@@ -9,18 +9,26 @@ export class SubscriptionTable extends Component {
     super(props);
     
     this.state = {
-			columnDefs: [
-				{headerName: "Subscription",  field: "subscription",  sortable: true},
-				{headerName: "Cost",          field: "cost",          sortable: true},
-				{headerName: "Renewel Date",  field: "renewelDate",   sortable: true},
+      columnDefs: [
+        {headerName: "Subscription",  field: "subscription",  sortable: true},
+        {headerName: "Cost",          field: "cost",          sortable: true},
+        {headerName: "Renewel Date",  field: "renewelDate",   sortable: true},
         {headerName: "Status",        field: "status",        sortable: true}
 
-			],
-			rowData: [
+      ],
+      rowData: [
         {subscription: "Hulu",     cost: "$7.99",  renewelDate: "2019-01-27"},
         {subscription: "Netflix",  cost: "$9.99",  renewelDate: "2019-01-21"}
-			]
-		}
+      ],
+      onGridReady: function(params) {
+        params.api.sizeColumnsToFit();
+        window.addEventListener("resize", function() {
+          setTimeout(function() {
+            params.api.sizeColumnsToFit();
+          });
+        });
+      }
+    }
   }
   
   onFirstDataRendered(params) {
@@ -34,6 +42,7 @@ export class SubscriptionTable extends Component {
           <AgGridReact
             columnDefs={this.state.columnDefs}
             rowData={this.state.rowData}
+            onGridReady={this.state.onGridReady}
             onFirstDataRendered={this.onFirstDataRendered.bind(this)}
           >
           </AgGridReact>
