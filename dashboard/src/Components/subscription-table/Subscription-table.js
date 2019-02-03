@@ -10,15 +10,15 @@ export class SubscriptionTable extends Component {
     
     this.state = {
 			columnDefs: [
-				{headerName: "Make", field: "make"},
-				{headerName: "Model", field: "model"},
-				{headerName: "Price", field: "price"}
+				{headerName: "Subscription",  field: "subscription",  sortable: true},
+				{headerName: "Cost",          field: "cost",          sortable: true},
+				{headerName: "Renewel Date",  field: "renewelDate",   sortable: true},
+        {headerName: "Status",        field: "status",        sortable: true}
 
 			],
 			rowData: [
-				{make: "Toyota", model: "Celica", price: 35000},
-				{make: "Ford", model: "Mondeo", price: 32000},
-				{make: "Porsche", model: "Boxter", price: 72000}
+                {subscription: "Hulu",     cost: "$7.99",  renewelDate: "2019-01-27"},
+                {subscription: "Netflix",  cost: "$9.99",  renewelDate: "2019-01-21"}
 			]
 		}
   }
