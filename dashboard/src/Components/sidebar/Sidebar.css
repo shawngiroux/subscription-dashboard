@@ -3,8 +3,8 @@
 
  .Sidebar {
     width: 100%;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 250px;
+    max-width: 250px;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #323544;
@@ -17,14 +17,11 @@
 
 .Sidebar .header .logo {
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Pacifico', cursive;
     justify-content: center;
     align-items: center;
     background-color: #A48AD4;
-}
-
-.Sidebar .header {
 }
 
 .Sidebar .header .user {
@@ -48,7 +45,7 @@
 }
 
 .Sidebar .header .user-info span {
-    font-size: 1em;
+    font-size: 0.90em;
 }
 
 .Sidebar .header .user-name {
