@@ -50,5 +50,6 @@
 
 .ag-paging-panel {
     padding: 0px;
-    border: none;
+    border: none !important; 
 }
+
