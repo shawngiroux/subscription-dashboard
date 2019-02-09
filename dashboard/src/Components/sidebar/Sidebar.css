@@ -7,21 +7,21 @@
     max-width: 250px;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #323544;
+    background-color: #4C4743;
 }
 
 .Sidebar .header {
-    height: 200px;
+    height: 150px;
     flex-direction: column;
 }
 
 .Sidebar .header .logo {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.0em;
     font-family: 'Pacifico', cursive;
     justify-content: center;
     align-items: center;
-    background-color: #A48AD4;
+    background-color: #EF6A47;
 }
 
 .Sidebar .header .user {
@@ -54,7 +54,7 @@
 
 .Sidebar .header .app-name {
     font-weight: bold;
-    color: #C6B1Ef;
+    color: #EF6A47;
 }
 
 .Sidebar ul {
@@ -64,7 +64,7 @@
 }
 
 .Sidebar ul > .active {
-    background-color: #232530;
+    background-color: #383431;
 }
 
 .Sidebar ul li  {
