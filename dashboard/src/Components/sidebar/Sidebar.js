@@ -31,10 +31,10 @@ class Sidebar extends React.Component {
                 Dashboard
               </NavLink>
             </li>
-            <li className={this.getNavLinkClass("/About")}>
-              <NavLink to="About">
+            <li className={this.getNavLinkClass("/Manage-Subscriptions")}>
+              <NavLink to="Manage-Subscriptions">
                 <FontAwesomeIcon icon="tools" />
-                Settings
+                Manage Subscriptions 
               </NavLink>
             </li>
           </ul>

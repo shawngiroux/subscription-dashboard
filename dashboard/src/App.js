@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Styles/widget.css';
 import Sidebar from './Components/sidebar/Sidebar.js';
-import About from './page2.js';
+import ManageSubscriptions from './Components/manage-subscriptions/manage-subscriptions.js';
 import { SubscriptionTable } from './Components/subscription-table/Subscription-table.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,7 +22,7 @@ class App extends Component {
             <Sidebar />
             <div className="content">
               <Route exact={true} path="/" component={SubscriptionTable}/>
-              <Route path="/About" component={About}/>
+              <Route path="/Manage-Subscriptions" component={ManageSubscriptions}/>
             </div>
           </div>
         </Router>
