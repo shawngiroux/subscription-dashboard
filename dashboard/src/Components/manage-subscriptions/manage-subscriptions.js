@@ -10,10 +10,16 @@ export class ManageSubscriptions extends Component {
   render() {
     return (
       <div className="widget">
-        <div class="widget-header">
+        <div className="widget-header">
           <span>Manage Subscriptions</span>
         </div>
-        <div class="widget-body"></div>
+        <div className="widget-body subscriptions">
+          <div className="input-group">
+            <span>Add Subscription</span>
+            <input type="text"></input>
+          </div>
+          <button className="btn">Add Subscription</button>
+        </div>
       </div>
     );
   }

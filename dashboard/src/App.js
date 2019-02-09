@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './Styles/widget.css';
+import './Styles/default.css';
 import Sidebar from './Components/sidebar/Sidebar.js';
 import ManageSubscriptions from './Components/manage-subscriptions/manage-subscriptions.js';
 import { SubscriptionTable } from './Components/subscription-table/Subscription-table.js';
