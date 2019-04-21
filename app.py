@@ -19,7 +19,11 @@ CORS(app)
 # Api Endpoints 
 @app.route('/login', methods=['POST'])
 def login():
-    return jsonify(False)
+    username = request.get_json().get('username')
+    password = request.get_json().get('password')
+
+    res = Login.login(username, password)
+    return jsonify(res)
 
 @app.route('/signup', methods=['POST'])
 def signup():

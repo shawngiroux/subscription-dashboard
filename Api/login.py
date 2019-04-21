@@ -16,21 +16,39 @@ class Login:
             database = os.environ.get('USER_DB')
         )
 
+    def login(self, username, password):
+        cursor = self.users_db.cursor()
+
+        query = ("SELECT fld_password FROM tbl_users "
+                 "WHERE fld_username = %(username)s")
+        params = {
+            'username': username
+        }
+
+        try:
+            cursor.execute(query, params)
+            for fld_password in cursor:
+                hash = fld_password[0]
+            return self.ph.verify(hash, password)
+        except Exception as err:
+            print(err)
+            return False
+
     def signup(self, username, password):
         hash   = self.ph.hash(password)
         cursor = self.users_db.cursor()
 
-        add_user = ("INSERT INTO tbl_users"
-                    "(fld_username, fld_password)"
-                    "VALUES"
-                    "(%(username)s, %(password)s)")
-        user = {
+        query = ("INSERT INTO tbl_users"
+                 "(fld_username, fld_password)"
+                 "VALUES"
+                 "(%(username)s, %(password)s)")
+        params = {
             'username': username,
             'password': self.ph.hash(password)
         }
 
         try:
-            cursor.execute(add_user, user)
+            cursor.execute(query, params)
             self.users_db.commit()
             return True
 
