@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class Sidebar extends React.Component {
+class Sidebar extends Component {
   getNavLinkClass = (path) => {
     return this.props.location.pathname === path ? 'active' : '';
   }
@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
             <li className={this.getNavLinkClass("/Manage-Subscriptions")}>
               <NavLink to="Manage-Subscriptions">
                 <FontAwesomeIcon icon="tools" />
-                Manage Subscriptions 
+                Manage Subscriptions
               </NavLink>
             </li>
           </ul>

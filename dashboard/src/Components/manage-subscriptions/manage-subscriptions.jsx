@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './manage-subscriptions.css';
 
 export class ManageSubscriptions extends Component {
-  constructor(props) {
-    super (props)
-
-  }
-
   render() {
     return (
       <div className="widget">
