@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './Styles/widget.css';
 import './Styles/default.css';
 import Sidebar from './Components/sidebar/Sidebar.js';
-import ManageSubscriptions from './Components/manage-subscriptions/manage-subscriptions.js';
-import { SubscriptionTable } from './Components/subscription-table/Subscription-table.js';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import ManageSubscriptions from './Components/manage-subscriptions/manage-subscriptions.jsx';
+import { SubscriptionTable } from './Components/subscription-table/Subscription-table.jsx';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 
