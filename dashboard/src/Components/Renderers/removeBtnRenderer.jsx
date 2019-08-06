@@ -1,6 +1,15 @@
 import React, {Component} from "react";
 
 export default class RemoveBtnRenderer extends Component {
+    constructor(props) {
+        super(props);
+
+        // Setting container style properties
+        this.props.reactContainer.style.display = "flex";
+        this.props.reactContainer.style.flexDirection = "center";
+        this.props.reactContainer.style.justifyContent = "center";
+    }
+
     removeRow = () => {
         let rows = [this.props.data];
         this.props.api.updateRowData({ remove: rows });
@@ -8,21 +17,16 @@ export default class RemoveBtnRenderer extends Component {
 
     render() {
         return (
-            <button style={ btnStyle } onClick={this.removeRow}>x</button>
+            <button style={ btnStyle } onClick={this.removeRow}>Remove</button>
         )
     }
 
 };
 
 const btnStyle = {
-    backgroundColor: "red",
-    fontWeight: "bold",
+    backgroundColor: "#f27e68",
     color: "white",
     border: "none",
-    width: "2em",
-    height: "2em",
-    borderRadius: "25%",
-    textAlign: "center",
-    padding: "0px",
-    margin: "0px"
+    height: "95%",
+    width: "75%",
 }

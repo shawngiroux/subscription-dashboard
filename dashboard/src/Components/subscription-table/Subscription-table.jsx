@@ -14,13 +14,7 @@ export class SubscriptionTable extends Component {
                 { headerName: "Status",
                   field: "status",
                   cellRenderer: "removeBtnRenderer",
-                  cellStyle: function(params) {
-                        return {
-                            display: "flex",
-                            flexDirection: "center"
-                        };
-                } }
-
+                } 
             ],
             rowData: [
                 { subscription: "Hulu", cost: "$7.99", renewelDate: "2019-01-27" },
