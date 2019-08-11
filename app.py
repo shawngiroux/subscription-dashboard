@@ -21,7 +21,7 @@ CORS(app)
 def login():
     username = request.get_json().get('username')
     password = request.get_json().get('password')
-    session = Session()
+    session  = Session()
 
     res = Login.login(username, password, session)
     return jsonify(res)
@@ -30,7 +30,7 @@ def login():
 def signup():
     username = request.get_json().get('username')
     password = request.get_json().get('password')
-    session = Session()
+    session  = Session()
 
     res = Login.signup(username, password, session)
     if res == 'unexpected error':

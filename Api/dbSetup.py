@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import os
 
-user = os.environ['DB_USERNAME']
+user     = os.environ['DB_USERNAME']
 password = os.environ['DB_PASSWORD']
 host     = os.environ['DB_HOSTNAME']
 database = os.environ['USER_DB']
@@ -19,7 +19,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = 'tbl_users'
 
-    id = Column(Integer, primary_key=True)
+    id           = Column(Integer, primary_key=True)
     fld_username = Column(String(60), unique=True, nullable=False)
     fld_password = Column(String(128), nullable=False)
 
