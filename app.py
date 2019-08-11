@@ -5,7 +5,7 @@ from pprint import pprint
 
 # Api Imports
 import sys
-#sys.path.append('/Api/')
+from Api.dbSetup import Session
 from Api.login import Login
 from Api.utility import formatError
 
@@ -21,16 +21,18 @@ CORS(app)
 def login():
     username = request.get_json().get('username')
     password = request.get_json().get('password')
+    session = Session()
 
-    res = Login.login(username, password)
+    res = Login.login(username, password, session)
     return jsonify(res)
 
 @app.route('/signup', methods=['POST'])
 def signup():
     username = request.get_json().get('username')
     password = request.get_json().get('password')
+    session = Session()
 
-    res = Login.signup(username, password)
+    res = Login.signup(username, password, session)
     if res == 'unexpected error':
         return jsonify(formatError('500', 'Internal error'))
     elif res is not True:
