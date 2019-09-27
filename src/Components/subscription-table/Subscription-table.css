@@ -10,12 +10,12 @@
 }
 
 .ag-header-container {
-    background-color: #EF6A47;
+    background-color: var(--color-primary);
     color: white;
 }
 
 .ag-paging-panel {
     padding: 0px;
-    border: none !important; 
+    border: none !important;
 }
 

@@ -1,3 +1,7 @@
+:root {
+    --color-primary: #36ad93;
+}
+
 html, body, #root, .App {
     height: 100%;
 }
