@@ -9,9 +9,26 @@
     width: 100%;
 }
 
+.ag-theme-balham .ag-root {
+    border: none;
+}
+
+.ag-theme-balham {
+    color: var(--widget-text);
+    background-color: var(--widget-background);
+}
+
+.ag-theme-balham .ag-row {
+    background-color: var(--widget-background);
+}
+
 .ag-header-container {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--widget-text);
+}
+
+.ag-theme-balham .ag-paging-panel {
+    color: var(--widget-text);
 }
 
 .ag-paging-panel {
