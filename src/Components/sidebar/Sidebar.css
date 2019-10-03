@@ -49,12 +49,12 @@
 }
 
 .Sidebar .header .user-name {
-    color: #ffffff;
+    color: var(--sidebar-text-light);
 }
 
 .Sidebar .header .app-name {
     font-weight: bold;
-    color: #ffffff;
+    color: var(--sidebar-text-light);
 }
 
 .Sidebar ul {
@@ -73,7 +73,7 @@
 
 .Sidebar ul li a, svg{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--sidebar-text-light);
 }
 
 .Sidebar ul li svg {

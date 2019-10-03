@@ -24,7 +24,7 @@
 
 .ag-header-container {
     background-color: var(--color-primary);
-    color: var(--widget-text);
+    color: var(--widget-text-light);
 }
 
 .ag-theme-balham .ag-paging-panel {

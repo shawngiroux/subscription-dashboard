@@ -5,7 +5,11 @@
 
     --application-background: white;
 
-    --widget-text: black;
+    --sidebar-text-light: #ffffff;
+
+    --widget-text: #000000;
+    --widget-text-dark: #666666;
+    --widget-text-light: #ffffff;
     --widget-background: #ffffff;
 }
 
