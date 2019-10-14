@@ -1,4 +1,5 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+import { PropTypes } from "prop-types";
 
 export default class RemoveBtnRenderer extends Component {
     constructor(props) {
@@ -18,9 +19,15 @@ export default class RemoveBtnRenderer extends Component {
     render() {
         return (
             <button style={ btnStyle } onClick={this.removeRow}>Remove</button>
-        )
+        );
     }
 
+}
+
+RemoveBtnRenderer.propTypes = {
+    reactContainer: PropTypes.object,
+    data: PropTypes.object,
+    api: PropTypes.object
 };
 
 const btnStyle = {
@@ -29,4 +36,4 @@ const btnStyle = {
     border: "none",
     height: "95%",
     width: "75%",
-}
+};

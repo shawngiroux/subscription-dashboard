@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import DashboardTable from './../DashboardTable.jsx';
+import React, { Component } from "react";
+import DashboardTable from "./../DashboardTable.jsx";
 import RemoveBtnRenderer from "../Renderers/removeBtnRenderer.jsx";
 
 export class SubscriptionTable extends Component {
@@ -12,9 +12,9 @@ export class SubscriptionTable extends Component {
                 { headerName: "Cost", field: "cost" },
                 { headerName: "Renewel Date", field: "renewelDate" },
                 { headerName: "Status",
-                  field: "status",
-                  cellRenderer: "removeBtnRenderer",
-                } 
+                    field: "status",
+                    cellRenderer: "removeBtnRenderer",
+                }
             ],
             rowData: [
                 { subscription: "Hulu", cost: "$7.99", renewelDate: "2019-01-27" },
@@ -23,7 +23,7 @@ export class SubscriptionTable extends Component {
             frameworkComponents: {
                 removeBtnRenderer: RemoveBtnRenderer
             },
-        }
+        };
     }
 
     render() {

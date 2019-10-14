@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { AgGridReact } from 'ag-grid-react';
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-balham.css';
-import './subscription-table/Subscription-table.css';
+import { PropTypes } from "prop-types";
+import { AgGridReact } from "ag-grid-react";
+import "ag-grid-community/dist/styles/ag-grid.css";
+import "ag-grid-community/dist/styles/ag-theme-balham.css";
+import "./subscription-table/Subscription-table.css";
 
 class DashboardTable extends Component {
     state = {
@@ -49,5 +50,22 @@ class DashboardTable extends Component {
         );
     }
 }
+
+DashboardTable.propTypes = {
+    columnDefs: PropTypes.arrayOf(
+        PropTypes.shape({
+            headerName: PropTypes.string.isRequired,
+            field: PropTypes.string.isRequired
+        })
+    ),
+    rowData: PropTypes.arrayOf(
+        PropTypes.shape({
+            subscription: PropTypes.string.isRequired,
+            cost: PropTypes.string.isRequired,
+            renewelDate: PropTypes.string.isRequired
+        })
+    ),
+    frameworkComponents: PropTypes.object
+};
 
 export default DashboardTable;
